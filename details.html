@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liste des Nouveau-Nés</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Barre de Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Hôpital Général de Kin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="details.html">Liste des Nouveau-Nés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Ajouter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tableau des nouveau-nés -->
+  <div class="container mt-5">
+    <h2 class="mb-4">Liste des Nouveau-Nés</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Nom</th>
+          <th scope="col">Date de Naissance</th>
+          <th scope="col">Poids</th>
+          <th scope="col">Taille</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Ajout de nouveaux bébés -->
+        <tr>
+          <td>Jean Dupont</td>
+          <td>12/04/2025</td>
+          <td>3.2 kg</td>
+          <td>52 cm</td>
+          <td>
+            <a href="details.html?id=1" class="btn btn-sm btn-info">Détails</a>
+            <a href="form.html?id=1" class="btn btn-sm btn-warning">Modifier</a>
+          </td>
+        </tr>
+        <!-- Autres entrées... -->
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="bg-light text-center py-3 mt-5">
+    <p>© 2025 Hôpital Général de Kin. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
